@@ -1,0 +1,16 @@
+<!-- AR.js by @jerome_etienne - github: https://github.com/jeromeetienne/ar.js - info: https://medium.com/arjs/augmented-reality-in-10-lines-of-html-4e193ea9fdbf -->
+<script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<body style='margin : 0px; overflow: hidden;'>
+	<a-scene embedded arjs='sourceType: webcam;'>
+		<a-plane position="" rotation="-90 0 0" width="4" height="4" color="#000000" material="" geometry="" scale="1.05 1 1"></a-plane>
+		<a-entity text="value: Hello there i hope you're enjoying your day" position="0.43893 0.3 0" rotation="-90 0 0" scale="4.5 4.5 1"></a-entity>
+    <a-box position="-0.00712 0.44632 -2.51802" rotation="" color="#000000" material="" geometry="" scale="4.2 1 1"></a-box>
+    <a-box position="0.00171 0.46956 1.83479" rotation="" color="#000000" material="" geometry="" scale="4.2 1 1"></a-box>
+    <a-entity text="value: Why are you looking over here?" position="0.69827 1.00978 1.77232" rotation="-90 0 0" scale="4.5 4.5 1"></a-entity>
+    <a-entity text="value: Thank you for noticing me" position="1.08261 0.97068 -2.66454" rotation="-90 0 0" scale="4.5 4.5 1"></a-entity>
+    <a-entity light="type: spot; angle: 45"></a-entity>
+    <a-entity light="type: spot; angle: -45"></a-entity>
+		<a-marker-camera preset='hiro'></a-marker-camera>
+	</a-scene>
+</body>
